@@ -1,0 +1,53 @@
+.sidebar {
+  margin: 0;
+  width: 25%;
+  background-color: rgb(42, 20, 14);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.iconWrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoBackground {
+  color: rgb(255, 149, 87);
+  z-index: -999;
+  opacity: 50%;
+  font-size: 3rem;
+  position: relative;
+  top: 35px;
+  left: 15px;
+}
+
+.logoForeground {
+  font-size: 3rem;
+  position: relative;
+}
+
+.list {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.listItem {
+  margin: 15% auto;
+}
+
+.listItem:hover {
+  cursor: pointer;
+  background-color: ;
+}

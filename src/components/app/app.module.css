@@ -1,0 +1,14 @@
+.App {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: auto;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mainWrapper {
+  padding: 5%;
+}
+
+.sidebarWrapper {
+}

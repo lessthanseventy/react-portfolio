@@ -1,0 +1,42 @@
+.terminal {
+  width: 100%;
+  height: 75%;
+  margin: 0 auto;
+  padding: 0;
+  background-color: black;
+  color: rgb(255, 204, 0);
+  border-radius: 3px;
+}
+
+.promptWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.prompt {
+  font-family: monospace;
+  color: black;
+  background-color: #0037da;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  width: fit-content;
+  border-bottom: 1px solid black;
+}
+
+.powerline {
+  height: 19px;
+}
+
+.input {
+  height: 18px;
+  color: white;
+  background-color: black;
+  border-style: none;
+}
+
+.input:focus {
+  border-style: none;
+  outline: none;
+}
