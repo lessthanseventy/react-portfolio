@@ -4,19 +4,39 @@ import classes from './sidebar.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 
-const Sidebar = () => {
+const Sidebar = props => {
   return (
     <div className={classes.sidebar}>
       <div className={classes.iconWrapper}>
         <FontAwesomeIcon icon={faEye} className={classes.logoBackground} />
         <FontAwesomeIcon icon={faEye} className={classes.logoForeground} />
       </div>
-      <ul className={classes.list}>
-        <li className={classes.listItem}>Home</li>
-        <li className={classes.listItem}>About</li>
-        <li className={classes.listItem}>Projects</li>
-        <li className={classes.listItem}>Blog</li>
-      </ul>
+      <div className={classes.list}>
+        <a
+          onClick={() => {
+            props.handleChangePage('Home');
+          }}
+          className={classes.listItem}
+          href='#Home'
+        >
+          Home
+        </a>
+        <a
+          onClick={() => {
+            props.handleChangePage('About');
+          }}
+          className={classes.listItem}
+          href='#About'
+        >
+          About
+        </a>
+        <a className={classes.listItem} href='#Services'>
+          Services
+        </a>
+        <a className={classes.listItem} href='#Blog'>
+          Blog
+        </a>
+      </div>
     </div>
   );
 };

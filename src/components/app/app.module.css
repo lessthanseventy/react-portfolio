@@ -1,14 +1,15 @@
 .App {
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
-  width: 100vw;
-  height: 100vh;
-}
-
-.mainWrapper {
-  padding: 5%;
+  width: 100%;
+  height: 100%;
 }
 
 .sidebarWrapper {
+  grid-column: 1/4;
+}
+.mainWrapper {
+  padding: 5%;
+  grid-column: 4/13;
 }
